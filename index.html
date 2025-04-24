@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Catalogo</title>
+    <!-- lo script sotto va sotto il title -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/6ce4304380.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="debug">
+    <header>
+      <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./img/duck.png" alt="logo" width="36" height="30">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Anagrafica Utenti</a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Storico Prestiti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">Cerca</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    
+      <!-- catalogo e bottone    -->
+               <div>
+                  <div class="container pt-4">
+                    <div class="row gy-4">
+                      <main class="col-lg-9">
+                        <div class="d-flex justify-content-between align-items-end">
+                          <h1>Catalogo Libri</h1>
+                          <a href="./new-book.html" class="btn btn-primary">Aggiungi libro</a>
+                        </div>
+                        <table class="table table-striped mb-0">
+                          <thead>
+                            <tr>
+                              <th scope="col">Titolo</th>
+                              <th scope="col" class="d-none d-md-table-cell">
+                                Data prestito
+                              </th>
+                              <th scope="col">Stato</th>
+                              <th scope="col" class="text-center">Azioni</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">I pilastri della terra</td>
+                              <td scope="col" class="d-none d-md-table-cell">-</td>
+                              <td><span class="badge text-bg-success">Disponibile</span></td>
+                              <td>
+                                <div class="d-flex gap-1 justify-content-center">
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></a>
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></a>
+                                </div>  
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">I promessi sposi</td>
+                              <td scope="col" class="d-none d-md-table-cell">-</td>
+                              <td><span class="badge text-bg-success">Disponibile</span></td>
+                              <td>
+                                <div class="d-flex gap-1 justify-content-center">
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></a>
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></a>
+                                </div>  
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Il signore degli anelli</td>
+                              <td scope="col" class="d-none d-md-table-cell">18/10/2023</td>
+                              <td><span class="badge text-bg-warning text-light">In prestito</span></td>
+                              <td>
+                                <div class="d-flex gap-1 justify-content-center">
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></a>
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></a>
+                                </div>  
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Harry Potter e la pietra filosofale</td>
+                              <td scope="col" class="d-none d-md-table-cell">-</td>
+                              <td><span class="badge text-bg-success">Disponibile</span></td>
+                              <td>
+                                <div class="d-flex gap-1 justify-content-center">
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></a>
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></a>
+                                </div>  
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Il codice Da Vinci</td>
+                              <td scope="col" class="d-none d-md-table-cell">-</td>
+                              <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                              <td>
+                                <div class="d-flex gap-1 justify-content-center">
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></a>
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></a>
+                                </div>  
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Shining</td>
+                              <td scope="col" class="d-none d-md-table-cell">-</td>
+                              <td><span class="badge text-bg-success">Disponibile</span></td>
+                              <td>
+                                <div class="d-flex gap-1 justify-content-center">
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></a>
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></a>
+                                </div>  
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">La divina commedia</td>
+                              <td scope="col" class="d-none d-md-table-cell">21/09/2023</td>
+                              <td><span class="badge text-bg-warning text-light">In prestito</span></td>
+                              <td>
+                                <div class="d-flex gap-1 justify-content-center">
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></a>
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></a>
+                                </div>  
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Il trono di spade</td>
+                              <td scope="col" class="d-none d-md-table-cell">-</td>
+                              <td><span class="badge text-bg-success">Disponibile</span></td>
+                              <td>
+                                <div class="d-flex gap-1 justify-content-center">
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></a>
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></a>
+                                </div>  
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Il mondo di Sofia</td>
+                              <td scope="col" class="d-none d-md-table-cell">-</td>
+                              <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                              <td>
+                                <div class="d-flex gap-1 justify-content-center">
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></a>
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></a>
+                                </div>  
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                              <td scope="col" class="d-none d-md-table-cell">25/07/2023</td>
+                              <td><span class="badge text-bg-warning text-light">In prestito</span></td>
+                              <td>
+                                <div class="d-flex gap-1 justify-content-center">
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></a>
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></a>
+                                </div>  
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Il piccolo principe</td>
+                              <td scope="col" class="d-none d-md-table-cell">-</td>
+                              <td><span class="badge text-bg-danger">Disponibile</span></td>
+                              <td>
+                                <div class="d-flex gap-1 justify-content-center">
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></a>
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></a>
+                                </div>  
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">La storia infinita</td>
+                              <td scope="col" class="d-none d-md-table-cell">-</td>
+                              <td><span class="badge text-bg-success">Disponibile</span></td>
+                              <td>
+                                <div class="d-flex gap-1 justify-content-center">
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></a>
+                                  <a href="" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></a>
+                                </div>  
+                              </td>
+                            </tr>
+                         </tbody>
+                        </table>
+
+                      </main>
+                      <!-- Card -->
+                        <aside class="col-lg-3">
+                          <div class="card" style="width: 20rem;">
+                            <div class="card-header">
+                              <h4>Todo</h4>
+                            </div>
+                              <div class="card-body">
+                              <ul class="list-group">
+                                <li class="list-group-item">
+                                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                                  <label class="form-check-label stretched-link" for="firstCheckboxStretched">Chiamare segreteria</label>
+                                </li>
+                                <li class="list-group-item">
+                                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                                  <label class="form-check-label stretched-link" for="firstCheckboxStretched">Mandare avvisi prestiti scaduti</label>
+                                </li>
+                                <li class="list-group-item">
+                                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                                  <label class="form-check-label stretched-link" for="firstCheckboxStretched">Ordinare nuovi libri</label>
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="card mt-4" style="width: 20rem;">
+                          <div class="card-header">
+                            <h4>F.A.Q.</h4>
+                          </div>
+                          <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  Come aggiungere un nuovo libro?
+                                  </button>
+                                </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  Come posso accedere all'anagrafica utenti?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  Posso usare questa dashboard da mobile?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </aside>
+                   </div>
+              </div>
+    
+                    
+
+
+    <!-- lo script sotto va prima della chiusura del body -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
